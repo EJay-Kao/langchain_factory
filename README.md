@@ -10,7 +10,7 @@
 * initial LanguageModelHandler
     - import module
     ```
-    from langchain_azure_test import lc_azure_model  # 待定
+    from langchain_model_inference import LanguageModelHandler  # 待定
     ```
     - 檢視目前現有之模型(未來可自行新增)：
         - gpt-4
