@@ -179,32 +179,6 @@ class LanguageModelHandler:
 
         self.chain = prompt | self.model | parser
 
-        # class Data(BaseModel):
-        #     input: str = Field(description='user input')
-        #     output: List[str] = Field(description='user output')
-
-        # default_template = """
-        # 請以json格式回答，
-        # key值為content，value為回答內容。
-        # 如果system prompt有規定格式，則以system_prompt為準
-
-        # system_prompt:
-        # {system_prompt}
-
-        # user_question:
-        # {user_question}
-        # """
-
-        # parser = JsonOutputParser(pydantic_object=Data)
-        # prompt = PromptTemplate(
-        #     template=default_template,
-        #     input_variables=["system_prompt", "user_question"],
-        #     partial_variables={"format_instructions": parser.get_format_instructions()},
-        # )
-
-        # self.chain = prompt | self.model | parser
-        # print('Chain initialized.')
-
     def _initialize(self):
         self._init_model_api()
         self._init_chain()
