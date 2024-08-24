@@ -1,0 +1,25 @@
+{
+    "gpt-35-turbo": {
+        "type": "openai",
+        "AZURE_OPENAI_API_VERSION": "***",
+        "AZURE_OPENAI_CHAT_DEPLOYMENT_NAME": "***-gpt-35-turbo-0613"
+    },
+    "gpt-4": {
+        "type": "openai",
+        "AZURE_OPENAI_API_VERSION": "***",
+        "AZURE_OPENAI_CHAT_DEPLOYMENT_NAME": "***-gpt-4-0125-preview"
+    },
+    "gpt-4o": {
+        "type": "openai",
+        "AZURE_OPENAI_API_VERSION": "***",
+        "AZURE_OPENAI_CHAT_DEPLOYMENT_NAME": "***-gpt-4o-2024-05-13"
+    },
+    "llama3.1": {
+        "type": "ollama",
+        "OLLAMA_base_url": "http://*********:80"
+    },
+    "gemma2:2b": {
+        "type": "ollama",
+        "OLLAMA_base_url": "http://*********:80"
+    },
+}

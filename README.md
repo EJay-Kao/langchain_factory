@@ -1,5 +1,6 @@
 # model inference 套件
 * first edit: 7/20
+* second edit: 8/24 -- 開發完ollama接口
 
 ## 使用方式：
 * conda create a virtual environment
@@ -15,6 +16,7 @@
     - 檢視目前現有之模型(未來可自行新增)：
         - gpt-4
         - gpt-35-turbo
+        - llama3.1
     - 實例化物件：
     ```
     system_prompt_test = [
@@ -33,5 +35,4 @@
 
     test_model.get_model_inference()
     ```
-* 保留ollama插槽，尚未開發完畢
     
